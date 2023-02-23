@@ -7,23 +7,39 @@ editor: visual
 #workshop man: Carl Boettiger
 #GOAL: make a reproducible code
 
-#rm(list=ls()) 
-#not actually super clean
+rm(list=ls()) 
+not actually super clean
 
-#setwd("/home/rstudio/workspaces") #if it starts with a slash most likely not portable
-#setwd generally bad... let it do its thing, "makes code more portable"
+setwd("/home/rstudio/workspaces") #if it starts with a slash most likely not portable
+
+setwd generally bad... let it do its thing, "makes code more portable"
+
+50# is server's fault
+400 is your fault
+
+
 
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+Render button checks reproducibility by runnning entire code and producing a neat external pdf
+
 
 ## Running Code
 
 When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
 ```{r}
+#usethis::use_github_action("render-rmarkdown.yaml")
+#you run this once for robots to find and we can delete it to get it out of the way because once we commit it comes along  
+```
+
+
+```{r}
 1 + 1
 ```
+
 
 You can add options to executable code like this
 
