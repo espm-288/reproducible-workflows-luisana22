@@ -4,8 +4,14 @@ format: html
 author: Luisana
 editor: visual
 ---
+#workshop man: Carl Boettiger
+#GOAL: make a reproducible code
 
-testing Hello!
+#rm(list=ls()) 
+#not actually super clean
+
+#setwd("/home/rstudio/workspaces") #if it starts with a slash most likely not portable
+#setwd generally bad... let it do its thing, "makes code more portable"
 
 ## Quarto
 
