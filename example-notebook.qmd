@@ -1,8 +1,11 @@
 ---
 title: "example-notebook.qmd"
 format: html
+author: Luisana
 editor: visual
 ---
+
+testing Hello!
 
 ## Quarto
 
@@ -27,6 +30,7 @@ The `echo: false` option disables the printing of code (only output is displayed
 
 ```{r}
 library(tidyverse)
+library(ggplot2)
 
 mtcars |> ggplot(aes(cyl, mpg)) + geom_point()
 ```
